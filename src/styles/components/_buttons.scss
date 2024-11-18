@@ -1,0 +1,23 @@
+@use 'variables';
+
+.button{
+    margin: 0 auto;
+    padding: 16px 100px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10px;
+    font-family: "Sour Gummy", sans-serif;
+
+    &--primary{
+        color: variables.$textColor;
+        background-color: variables.$colorButton;
+    }
+
+    @media (max-width: 640px){
+        display: flex;
+        justify-content: center;
+    }
+}

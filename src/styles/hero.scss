@@ -1,0 +1,64 @@
+@use 'components/variables';
+
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/ai-generated-9008727_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 100px;
+
+    .container{
+        position: relative;
+    }
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secundaryTextColor;
+        content: '';
+        opacity: .9;
+    }
+
+    &__text{
+        color: variables.$textColor;
+        margin-top: 64px;
+        margin-bottom: 12px;
+        font-size: 35px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align:center;
+        font-family: "Sour Gummy", sans-serif;
+    }
+
+    &__sobre{
+        width: 80%;
+        font-size: 18px;
+        color: variables.$textColor;
+        margin-left: 10%;
+    }
+
+    &__logo{
+        height: 250px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 640px){
+        &__logo{
+            height: 140px;
+        }
+
+        &__text{
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}

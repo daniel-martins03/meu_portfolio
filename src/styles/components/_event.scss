@@ -1,0 +1,103 @@
+@use 'variables';
+
+.projetos{
+    margin-bottom: 20px;
+    background-color: rgb(138, 138, 160);
+}
+
+.p_title{
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.projeto{
+    border-radius: 20px;
+    padding: 20px 30px;
+    background-color: white;
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image{
+        max-width: 200px;
+    }
+
+    &__linguagens{
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: end;
+        border-radius: 10px;
+    }
+
+    &__button a{
+        padding: 10px 30px;
+        text-decoration: none;
+        font-family: "Sour Gummy", sans-serif;
+    }
+
+    &__linguagens img{
+        height: 30px;
+    }
+
+    &__details{
+        margin-right: 40px;
+
+        &__title{
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: black;
+            font-family: "Sour Gummy", sans-serif;
+        }
+
+        &__description{
+            line-height: 22px;
+            color: black;
+        }
+    }
+
+    @media (max-width:640px){
+        .container{
+            display: block;
+        }
+
+        &__image{
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+            text-align: center;
+
+        }
+
+        &__linguagens{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        &__button{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

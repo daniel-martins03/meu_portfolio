@@ -1,0 +1,48 @@
+@use 'variables';
+
+.cabecalho{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+    &__titulo{
+        color: variables.$textColor;
+        align-items: center;
+        font-family: "Sour Gummy", sans-serif;
+        font-size: 40px;
+    }
+
+    &__lista{
+        display: flex;
+        gap: 20px;
+    }
+
+    &__links{
+        color: variables.$textColor;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Sour Gummy", sans-serif;
+    }
+
+    &__icones img{
+        height: 25px;
+        align-items: center;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        text-align: center;
+        
+        &__titulo{
+            margin-bottom: 20px;
+        }
+
+        &__lista{
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+}

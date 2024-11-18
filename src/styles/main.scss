@@ -1,0 +1,49 @@
+@use 'components/cabecalho';
+@use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'components/event';
+@use 'components/variables';
+@use 'footer';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(138, 138, 160);
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+.container_cabecalho{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
